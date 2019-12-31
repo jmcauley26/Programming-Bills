@@ -19,16 +19,10 @@ data['Type3'] = data['Type2'].replace(" debit", "debit").replace()
 
 data['Date']=pd.to_datetime(data['Date'])
 
-class BillManagement(object):
-
-    def read_bills2():
-        print(rawdata)
-        print()
-        display_menu()
-
-    def use_bills():
-        bills = read_bills()
-        return bills
+def read_bills2():
+    print(rawdata)
+    print()
+    display_menu()
 
 def yearval(msg):
     while True:
@@ -183,7 +177,6 @@ def display_menu():
     choice = input("""    A: View Bills
     B: Insert a Bill
     C: Produce Reports
-    D: Visuals
     Q: Quit/Log Out
 
     Please enter your choice: """)
